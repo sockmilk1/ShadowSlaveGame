@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shadow Slave — Sunny Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="topbar">
+      <div id="hp">HP: <span id="hpval">100</span>/<span id="hpmax">100</span></div>
+      <div id="xp">XP: <span id="xpval">0</span>/<span id="xpmax">100</span></div>
+      <div id="lvl">Lv: <span id="lvlval">1</span></div>
+      <div id="shad">ShadFrags: <span id="shadval">0</span></div>
+    </div>
+
+    <div id="abilitybar">
+      <div class="ability" id="a-q" data-key="Q"><div class="kbd">Q</div><div class="name">Shadow Form</div><div class="req">Lv 1</div></div>
+      <div class="ability" id="a-w" data-key="W"><div class="kbd">W</div><div class="name">Blink</div><div class="req">Lv 3</div></div>
+      <div class="ability" id="a-e" data-key="E"><div class="kbd">E</div><div class="name">Tentacle</div><div class="req">Lv 5</div></div>
+      <div class="ability" id="a-r" data-key="R"><div class="kbd">R</div><div class="name">Echo Summon</div><div class="req">Lv 8</div></div>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <canvas id="game" width="1200" height="700"></canvas>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
